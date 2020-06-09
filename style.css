@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(104, 104, 104);
+}
+
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,600");
+
+header {
+  background-color: #0088ff;
+  height: 50px;
+  border-radius: 25px;
+}
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ul {
+  text-shadow: #ffffff 0 0 15px;
+}
+
+.container {
+  min-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+nav {
+  float: right;
+}
+nav ul {
+  margin: 0;
+  padding-top: 2px;
+  padding-right: 10px;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+  margin-left: 4px;
+  padding-top: 14px;
+  position: relative;
+}
+/* NAV TEXT COLOR */
+nav a {
+  color: rgb(57, 57, 112);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+nav a:hover {
+  color: #fff;
+}
+nav a::before {
+  content: "";
+  display: block;
+  height: 5px;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+nav a:hover::before {
+  width: 100%;
+}
+main {
+  padding-bottom: 50px;
+  text-align: center;
+  margin-top: 25px;
+}
+h1 {
+  font-size: 44px;
+  color: rgb(255, 255, 255);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+footer {
+  background-color: #0088ffff;
+  height: 50px;
+  border-radius: 25px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+footer p {
+  font-size: 15px;
+  text-align: center;
+  padding-top: 15px;
+  color: blanchedalmond;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@media only screen and (min-width: 375px) {
+  body {
+    background-color: black;
+  }
+}
