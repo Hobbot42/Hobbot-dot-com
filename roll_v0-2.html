@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styleRoll_v0-2.css" />
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap"
+      rel="stylesheet"
+    />
+    <title>HOBBOT ROLL</title>
+  </head>
+  <!--_________________ PAGE HEADER START ADD MORE FUNTIONS !!!!!!-->
+  <body
+    onload="myRoll('die1A', '#but1A'),myRoll('die1B', '#but1B'),myRoll('die1C', '#but1C'),myRoll('die1D', '#but1D'),myRoll('die1D', '#but1D')"
+  >
+    <!-- _________________ PAGE HEADER START-->
+    <header>
+      <h1 id="title">
+        ALPHA DICE ROLLER 0.2
+        <a href="index.html">Home</a>
+      </h1>
+    </header>
+    <!--______________BIG CARD 1111111111111111111111111111111 START-->
+    <div class="bigCard" id="bigCard1">
+      <!--__________________ CHARACTER NAME-->
+      <input
+        type="text"
+        id="charOne"
+        class="charName"
+        name="charOne"
+        placeholder="Character Name"
+        value="Noland"
+      />
+      <!--______________LITTLE CARD 1AAAAAAAAAAA START-->
+      <form class="litCard">
+        <!--___________________ ROLL BUTTON 1A-->
+        <button
+          class="button"
+          id="but1A"
+          type="button"
+          onclick="rollDice('rolled1A', 'total1A', 'die1A', 'qty1A', 'mod1A')"
+        >
+          Roll
+        </button>
+        <!--________________ ROLL DICE TYPE-->
+
+        <input
+          type="text"
+          id="rollFor1A"
+          class="rollFor"
+          name="rollFor1A"
+          placeholder="Dice"
+          value="Initiative"
+          required
+        />
+
+        <div id="total1A" class="total">?</div>
+        <!--____________________SELECT DIE-->
+        <div class="dieSelect" style="width: 100px;">
+          <select
+            name="die1A"
+            id="die1A"
+            size="number"
+            dir="rtl"
+            onchange="myRoll('die1A', '#but1A')"
+          >
+            <option value="4">D4 x</option>
+            <option value="6">D6 x</option>
+            <option value="8">D8 x</option>
+            <option value="10">D10 x</option>
+            <option value="12">D12 x</option>
+            <option value="20" selected="selected">D20 x</option>
+            <option value="100">D100 x</option>
+            <!--_____________Number of dice-->
+            <input
+              type="number"
+              id="qty1A"
+              class="qtyDice"
+              name="qty1A"
+              value="1"
+              min="1"
+              max="10"
+            />
+          </select>
+        </div>
+        <!--_________________ Die MODIFIER-->
+        <label for="modOne"> &nbsp &nbsp &nbsp &nbsp Mod:</label>
+        <input
+          type="number"
+          id="mod1A"
+          class="modifier"
+          name="mod1A"
+          min="-99"
+          max="99"
+          value="0"
+        />
+        <!--______________  OUTPUT DISPLAY-->
+        <div id="rolled1A">Dice + Mod</div>
+        <!-- _________LITTLE CARD 1BBBBBBBBBB START -->
+      </form>
+      <form class="litCard">
+        <!--___________________ ROLL BUTTON-->
+        <button
+          class="button"
+          id="but1B"
+          type="button"
+          onclick="rollDice('rolled1B', 'total1B', 'die1B', 'qty1B', 'mod1B')"
+        >
+          Roll
+        </button>
+        <!--________________ ROLL DICE TYPE 1B-->
+        <input
+          type="text"
+          id="rollFor1B"
+          class="rollFor"
+          name="rollFor1B"
+          placeholder="Dice"
+          value="Sword Hit"
+          required
+        />
+        <div id="total1B" class="total">?</div>
+        <!--____________________SELECT DIE-->
+        <div class="dieSelect" style="width: 100px;">
+          <select
+            name="die1B"
+            id="die1B"
+            size="number"
+            dir="rtl"
+            onchange="myRoll('die1B', '#but1B')"
+          >
+            <option value="4">D4 x</option>
+            <option value="6">D6 x</option>
+            <option value="8">D8 x</option>
+            <option value="10">D10 x</option>
+            <option value="12">D12 x</option>
+            <option value="20" selected="selected">D20 x</option>
+            <option value="100">D100 x</option>
+            <!--_____________Number of dice-->
+            <input
+              type="number"
+              id="qty1B"
+              class="qtyDice"
+              name="qty1B"
+              value="1"
+              min="1"
+              max="10"
+            />
+          </select>
+        </div>
+        <!--_________________ Die MODIFIER-->
+        <label for="modOne"> &nbsp &nbsp &nbsp &nbsp Mod:</label>
+        <input
+          type="number"
+          id="mod1B"
+          class="modifier"
+          name="mod1B"
+          min="-99"
+          max="99"
+          value="1"
+        />
+        <!--______________  OUTPUT DISPLAY-->
+        <div id="rolled1B">Dice + Mod</div>
+      </form>
+      <!-- _________LITTLE CARD 1CCCCCCCCCC START -->
+      <form class="litCard">
+        <!--___________________ ROLL BUTTON-->
+        <button
+          class="button"
+          id="but1C"
+          type="button"
+          onclick="rollDice('rolled1C', 'total1C', 'die1C', 'qty1C', 'mod1C')"
+        >
+          Roll
+        </button>
+        <!--________________ ROLL DICE TYPE-->
+        <input
+          type="text"
+          id="rollFor1C"
+          class="rollFor"
+          name="rollFor1C"
+          placeholder="Dice"
+          value="Dagger Hit"
+          required
+        />
+        <div id="total1C" class="total">?</div>
+        <!--____________________SELECT DIE-->
+        <div class="dieSelect" style="width: 100px;">
+          <select
+            name="die1C"
+            id="die1C"
+            size="number"
+            dir="rtl"
+            onchange="myRoll('die1C', '#but1C')"
+          >
+            <option value="4">D4 x</option>
+            <option value="6">D6 x</option>
+            <option value="8">D8 x</option>
+            <option value="10">D10 x</option>
+            <option value="12">D12 x</option>
+            <option value="20" selected="selected">D20 x</option>
+            <option value="100">D100 x</option>
+            <!--_____________Number of dice-->
+            <input
+              type="number"
+              id="qty1C"
+              class="qtyDice"
+              name="qty1C"
+              value="1"
+              min="1"
+              max="10"
+            />
+          </select>
+        </div>
+        <!--_________________ Die MODIFIER-->
+        <label for="mod1C"> &nbsp &nbsp &nbsp &nbsp Mod:</label>
+        <input
+          type="number"
+          id="mod1C"
+          class="modifier"
+          name="mod1C"
+          min="-99"
+          max="99"
+          value="0"
+        />
+        <!--______________  OUTPUT DISPLAY-->
+        <div id="rolled1C">Dice + Mod</div>
+      </form>
+      <!-- _________LITTLE CARD 1DDDDDDDDDD START -->
+      <form class="litCard">
+        <!--___________________ ROLL BUTTON-->
+        <button
+          class="button"
+          id="but1D"
+          type="button"
+          onclick="rollDice('rolled1D', 'total1D', 'die1D', 'qty1D', 'mod1D')"
+        >
+          Roll
+        </button>
+        <!--________________ ROLL DICE TYPE-->
+        <input
+          type="text"
+          id="rollFor1D"
+          class="rollFor"
+          name="rollFor1D"
+          placeholder="Dice"
+          value="D20"
+          required
+        />
+        <div id="total1D" class="total">?</div>
+        <!--____________________SELECT DIE-->
+        <div class="dieSelect" style="width: 100px;">
+          <select
+            name="die1D"
+            id="die1D"
+            size="number"
+            dir="rtl"
+            onchange="myRoll('die1D', '#but1D')"
+          >
+            <option value="4">D4 x</option>
+            <option value="6">D6 x</option>
+            <option value="8">D8 x</option>
+            <option value="10">D10 x</option>
+            <option value="12">D12 x</option>
+            <option value="20" selected="selected">D20 x</option>
+            <option value="100">D100 x</option>
+            <!--_____________Number of dice-->
+            <input
+              type="number"
+              id="qty1D"
+              class="qtyDice"
+              name="qty1D"
+              value="1"
+              min="1"
+              max="10"
+            />
+          </select>
+        </div>
+        <!--_________________ Die MODIFIER-->
+        <label for="modOne"> &nbsp &nbsp &nbsp &nbsp Mod:</label>
+        <input
+          type="number"
+          id="mod1D"
+          class="modifier"
+          name="mod1D"
+          min="-99"
+          max="99"
+          value="0"
+        />
+        <!--______________  OUTPUT DISPLAY-->
+        <div id="rolled1D">Dice + Mod</div>
+      </form>
+    </div>
+
+    <script src="./appRoll_v0-2.js"></script>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  text-align: center;
+  font-size: 15px;
+  background-color: gray;
+  background-image: url(./img/northMap.jpg);
+  background-repeat: repeat;
+  background-size: 100%;
+  background-position: center;
+  border-radius: 9px;
+  margin: auto;
+}
+h1 {
+  font-size: 24px;
+  font-family: "MedievalSharp", cursive;
+  color: red;
+  text-shadow: 2px 2px blue;
+  background-color: rgba(21, 255, 0, 0.472);
+}
+.bigCard {
+  width: 355px;
+  height: 445px;
+  border-radius: 9px;
+  margin: 4px;
+  display: inline-block;
+}
+#bigCard1 {
+  background-color: rgba(255, 255, 0, 0.5);
+}
+.charName {
+  font-family: "MedievalSharp", cursive;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 9px;
+  width: 100%;
+  padding-top: 5px;
+  height: 39px;
+  font-size: 35px;
+}
+.litCard {
+  width: 168px;
+  height: 190px;
+  background-color: rgba(255, 255, 255, 0.75);
+  margin: 4px;
+  border-radius: 9px;
+  float: left;
+}
+.cardSavThrow {
+  width: 344px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.75);
+  margin: 5px;
+  border-radius: 9px;
+  float: left;
+}
+input {
+  text-align: center;
+  border: none;
+  background: none;
+  height: 16px;
+}
+.button {
+  font-family: "MedievalSharp", cursive;
+  width: 80px;
+  height: 40px;
+  font-size: 20px;
+  background-color: burlywood;
+  margin: 5px;
+  cursor: help;
+}
+input.rollFor {
+  height: 24px;
+  font-family: "Times New Roman";
+  width: 98%;
+  font-size: 16px;
+}
+.total {
+  font-size: 60px;
+  font-family: "Times New Roman";
+  line-height: 60px;
+  height: 60px;
+  pointer-events: none;
+  transition: opacity ease-out 1s, transform ease-in-out 1s;
+}
+.dieSelect {
+  width: 100% !important;
+}
+.modifier {
+  width: 40px;
+}
+.dieSelect select {
+  background: none;
+  width: 65px;
+  height: 20px;
+  border: none;
+}
+.qtyDice {
+  height: 20px;
+}
+input.qtyDice {
+  width: 40px;
+  height: 20px;
+}
+button:hover {
+  opacity: 0.5;
+}
+input.rollFor:hover {
+  opacity: 0.5;
+}
