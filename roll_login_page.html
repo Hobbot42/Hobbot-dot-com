@@ -3,9 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="nofollow" />
     <title>HOBBOT.COM</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="./img/favicon.png" type="png" />
+    <script type="text/javascript">
+      // PASSWORD PROTECTION SCRIPT
+
+      function TheLogin() {
+        var password = "salt";
+
+        if (this.document.login.pass.value == password) {
+          top.location.href = "roll_select_page.html";
+        } else {
+          window.alert("Incorrect password, please try again.");
+        }
+      }
+    </script>
   </head>
   <body>
     <header>
@@ -13,14 +27,37 @@
     </header>
     <nav>
       <ul>
-        <li><a href="roll_card_ALL_v0-5.html">ROLL SHARE PAGE</a></li>
-        &nbsp; &nbsp; &nbsp;
-        <li><a href="roll_login_page.html">LOGIN PAGE</a></li>
+        <a href="index.html">HOME</a>
       </ul>
+
+      <div
+        style="
+          text-align: center;
+          margin: 0 auto;
+          color: #0000ff;
+          font: normal 13px arial, sans-serif;
+        "
+      >
+        Enter your password:<br />
+        <form name="login" style="margin: 5px 0px 0px 0px;">
+          <input
+            type="text"
+            name="pass"
+            size="17"
+            onkeydown="if(event.keyCode==13) event.keyCode=9;"
+            style="width: 130px;"
+          /><br />
+          <input
+            type="button"
+            value="Click to Login"
+            style="width: 134px; margin: 4px auto 4px auto;"
+            onclick="javascript:TheLogin(this.form)"
+          />
+        </form>
+      </div>
     </nav>
     <main>
       <h1>DON'T PANIC</h1>
-      <li><a href="roll.html">OLD ROLL APP</a></li>
     </main>
     <footer>
       <p>

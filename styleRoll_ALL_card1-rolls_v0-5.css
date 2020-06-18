@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  text-align: center;
+  font-size: 15px;
+  background-color: gray;
+  background-image: url(./img/northMap.jpg);
+  background-repeat: repeat;
+  background-size: 100%;
+  background-position: center;
+  border-radius: 9px;
+  margin: auto;
+}
+h1 {
+  font-size: 20px;
+  margin-bottom: 6px;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px rgb(138, 138, 180);
+  background-color: rgba(0, 0, 0, 0.472);
+}
+
+#bigCard1 {
+  background-color: rgba(255, 255, 0, 0.5);
+}
+#bigCard2 {
+  background-color: rgba(139, 69, 19, 0.5);
+}
+#bigCard3 {
+  background-color: rgba(0, 128, 0, 0.5);
+}
+#bigCard4 {
+  background-color: rgba(255, 166, 0, 0.5);
+}
+#bigCard5 {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+#bigCard6 {
+  background-color: rgba(128, 0, 128, 0.5);
+}
+#bigCard7 {
+  background-color: rgba(128, 128, 128, 0.5);
+}
+#bigCard8 {
+  background-color: rgba(0, 0, 0, 0.507);
+}
+.bigCard {
+  width: 333px;
+  height: 350px;
+  border-radius: 9px;
+  margin: 10px;
+  display: inline-block;
+  box-shadow: 3px 3px 8px 8px rgb(0, 0, 0);
+}
+.Name {
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 9px;
+  height: 44px;
+  font-size: 36px;
+}
+.litCard {
+  width: 310px;
+  height: 280px;
+  background-color: rgba(255, 255, 255, 0.75);
+  margin: 12px;
+  border-radius: 9px;
+  float: left;
+}
+.type {
+  font-size: 30px;
+}
+.total {
+  font-size: 200px;
+  line-height: 180px;
+  pointer-events: none;
+  transition: opacity ease-out 1s, transform ease-in-out 1s;
+}
+.rolled {
+  font-size: 30px;
+}

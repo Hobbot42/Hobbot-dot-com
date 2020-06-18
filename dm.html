@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="nofollow" />
+    <link rel="stylesheet" href="styleRoll_card1_v0-5.css" />
+    <link rel="shortcut icon" href="./img/favicon.png" type="png" />
+    <title>HOBBOT ROLL 0.5</title>
+  </head>
+  <!--_________________ PAGE HEADER START ADD MORE FUNTIONS !!!!!!-->
+  <body>
+    <!-- _______________________________________ PAGE HEADER START-->
+    <header>
+      <h1 id="title">
+        Private Beta DICE ROLLER 0.5
+        <a href="index.html">Home</a>
+      </h1>
+    </header>
+    <!--______________BIG CARD 888888888888888888888888888888888888888888 START-->
+    <div class="bigCard" id="bigCard8">
+      <!--__________________ CHARACTER NAME-->
+      <input
+        type="text"
+        id="charEight"
+        class="charName"
+        name="charEight"
+        placeholder="Character Name"
+      />
+      <!--______________LITTLE CARD 8AAAAAAAAAAA START-->
+      <!--______________LITTLE CARD 8AAAAAAAAAAA START-->
+      <div class="litCard">
+        <!--________________ ROLL DICE TYPE-->
+        <input
+          type="text"
+          id="rollFor8A"
+          class="rollFor"
+          name="rollFor8A"
+          placeholder="Type of Roll"
+        />
+        <!--__________________________TOTAL-->
+        <div id="total8A" class="total">-</div>
+        <!--___________________ ROLL BUTTON 8A-->
+        <button
+          class="button"
+          id="but8A"
+          type="button"
+          onclick="rollDice('rolled8A', 'total8A', 'selDieUp8A', 'numDieUp8A', 'modDieUp8A', 'charEight', 'rollFor8A')"
+        >
+          Roll
+        </button>
+        <!--_________________________SELECT BUTTONS-->
+        <button
+          class="smlButton"
+          id="numDieUp8A"
+          type="button"
+          onclick="numDieUp(`numDieUp8A`, `#numDieUp8A`, `selDieUp8A`, `modDieUp8A`, `#but8A`)"
+          value="00"
+        >
+          +
+        </button>
+        <button
+          class="smlButton"
+          id="selDieUp8A"
+          type="button"
+          onclick="selDieUp('selDieUp8A', `#selDieUp8A`, `modDieUp8A`, `numDieUp8A`, `#but8A`)"
+          value="00"
+        >
+          &gt
+        </button>
+        <button
+          class="smlButton"
+          id="modDieUp8A"
+          type="button"
+          onclick="modDieUp('modDieUp8A', `#modDieUp8A`, `selDieUp8A`, `numDieUp8A`, `#but8A`)"
+          value="00"
+        >
+          +
+        </button>
+        <br />
+        <button
+          class="smlButton"
+          id="numDieDn8A"
+          type="button"
+          onclick="numDieDn(`numDieUp8A`, `#numDieUp8A`, `selDieUp8A`, `modDieUp8A`, `#but8A`)"
+        >
+          -
+        </button>
+        <button
+          class="smlButton"
+          id="selDieDn8A"
+          type="button"
+          onclick="selDieDn('selDieUp8A', `#selDieUp8A`, `modDieUp8A`, `numDieUp8A`, `#but8A`)"
+        >
+          &lt
+        </button>
+        <button
+          class="smlButton"
+          id="modDieDn8A"
+          type="button"
+          onclick="modDieDn('modDieUp8A', `#modDieUp8A`, `selDieUp8A`, `numDieUp8A`, `#but8A`)"
+        >
+          -
+        </button>
+        <!--____________________  OUTPUT DISPLAY-->
+        <div class="rolled" id="rolled8A">Dice + Mod</div>
+      </div>
+      <!-- _____________________LITTLE CARD 8BBBBBBBBBB START -->
+      <!-- _____________________LITTLE CARD 8BBBBBBBBBB START -->
+      <div class="litCard">
+        <!--________________ ROLL DICE TYPE-->
+        <input
+          type="text"
+          id="rollFor8B"
+          class="rollFor"
+          name="rollFor8B"
+          placeholder="Type of Roll"
+        />
+        <!--__________________________TOTAL-->
+        <div id="total8B" class="total">-</div>
+        <!--___________________ ROLL BUTTON 8B-->
+        <button
+          class="button"
+          id="but8B"
+          type="button"
+          onclick="rollDice('rolled8B', 'total8B', 'selDieUp8B', 'numDieUp8B', 'modDieUp8B','charEight', 'rollFor8B')"
+        >
+          Roll
+        </button>
+        <!--_________________________SELECT BUTTONS-->
+        <button
+          class="smlButton"
+          id="numDieUp8B"
+          type="button"
+          onclick="numDieUp(`numDieUp8B`, `#numDieUp8B`, `selDieUp8B`, `modDieUp8B`, `#but8B`)"
+          value="00"
+        >
+          +
+        </button>
+        <button
+          class="smlButton"
+          id="selDieUp8B"
+          type="button"
+          onclick="selDieUp('selDieUp8B', `#selDieUp8B`, `modDieUp8B`, `numDieUp8B`, `#but8B`)"
+          value="00"
+        >
+          &gt
+        </button>
+        <button
+          class="smlButton"
+          id="modDieUp8B"
+          type="button"
+          onclick="modDieUp('modDieUp8B', `#modDieUp8B`, `selDieUp8B`, `numDieUp8B`, `#but8B`)"
+          value="00"
+        >
+          +
+        </button>
+        <br />
+        <button
+          class="smlButton"
+          id="numDieDn8B"
+          type="button"
+          onclick="numDieDn(`numDieUp8B`, `#numDieUp8B`, `selDieUp8B`, `modDieUp8B`, `#but8B`)"
+        >
+          -
+        </button>
+        <button
+          class="smlButton"
+          id="selDieDn8B"
+          type="button"
+          onclick="selDieDn('selDieUp8B', `#selDieUp8B`, `modDieUp8B`, `numDieUp8B`, `#but8B`)"
+        >
+          &lt
+        </button>
+        <button
+          class="smlButton"
+          id="modDieDn8B"
+          type="button"
+          onclick="modDieDn('modDieUp8B', `#modDieUp8B`, `selDieUp8B`, `numDieUp8B`, `#but8B`)"
+        >
+          -
+        </button>
+        <!--____________________  OUTPUT DISPLAY-->
+        <div class="rolled" id="rolled8B">Dice + Mod</div>
+      </div>
+      <!-- _________LITTLE CARD 8CCCCCCCCCC START -->
+      <!-- _________LITTLE CARD 8CCCCCCCCCC START -->
+      <div class="litCard">
+        <!--________________ ROLL DICE TYPE-->
+        <input
+          type="text"
+          id="rollFor8C"
+          class="rollFor"
+          name="rollFor8C"
+          placeholder="Type of Roll"
+        />
+        <!--__________________________TOTAL-->
+        <div id="total8C" class="total">-</div>
+        <!--___________________ ROLL BUTTON 8C-->
+        <button
+          class="button"
+          id="but8C"
+          type="button"
+          onclick="rollDice('rolled8C', 'total8C', 'selDieUp8C', 'numDieUp8C', 'modDieUp8C','charEight', 'rollFor8C')"
+        >
+          Roll
+        </button>
+        <!--_________________________SELECT BUTTONS-->
+        <button
+          class="smlButton"
+          id="numDieUp8C"
+          type="button"
+          onclick="numDieUp(`numDieUp8C`, `#numDieUp8C`, `selDieUp8C`, `modDieUp8C`, `#but8C`)"
+          value="00"
+        >
+          +
+        </button>
+        <button
+          class="smlButton"
+          id="selDieUp8C"
+          type="button"
+          onclick="selDieUp('selDieUp8C', `#selDieUp8C`, `modDieUp8C`, `numDieUp8C`, `#but8C`)"
+          value="00"
+        >
+          &gt
+        </button>
+        <button
+          class="smlButton"
+          id="modDieUp8C"
+          type="button"
+          onclick="modDieUp('modDieUp8C', `#modDieUp8C`, `selDieUp8C`, `numDieUp8C`, `#but8C`)"
+          value="00"
+        >
+          +
+        </button>
+        <br />
+        <button
+          class="smlButton"
+          id="numDieDn8C"
+          type="button"
+          onclick="numDieDn(`numDieUp8C`, `#numDieUp8C`, `selDieUp8C`, `modDieUp8C`, `#but8C`)"
+        >
+          -
+        </button>
+        <button
+          class="smlButton"
+          id="selDieDn8C"
+          type="button"
+          onclick="selDieDn('selDieUp8C', `#selDieUp8C`, `modDieUp8C`, `numDieUp8C`, `#but8C`)"
+        >
+          &lt
+        </button>
+        <button
+          class="smlButton"
+          id="modDieDn8C"
+          type="button"
+          onclick="modDieDn('modDieUp8C', `#modDieUp8C`, `selDieUp8C`, `numDieUp8C`, `#but8C`)"
+        >
+          -
+        </button>
+        <!--____________________  OUTPUT DISPLAY-->
+        <div class="rolled" id="rolled8C">Dice + Mod</div>
+      </div>
+      <!-- _________LITTLE CARD 8DDDDDDDDDD START -->
+      <!-- _________LITTLE CARD 8DDDDDDDDDD START -->
+      <div class="litCard">
+        <!--________________ ROLL DICE TYPE-->
+        <input
+          type="text"
+          id="rollFor8D"
+          class="rollFor"
+          name="rollFor8D"
+          placeholder="Type of Roll"
+        />
+        <!--__________________________TOTAL-->
+        <div id="total8D" class="total">-</div>
+        <!--___________________ ROLL BUTTON 8D-->
+        <button
+          class="button"
+          id="but8D"
+          type="button"
+          onclick="rollDice('rolled8D', 'total8D', 'selDieUp8D', 'numDieUp8D', 'modDieUp8D','charEight', 'rollFor8D')"
+        >
+          Roll
+        </button>
+        <!--_________________________SELECT BUTTONS-->
+        <button
+          class="smlButton"
+          id="numDieUp8D"
+          type="button"
+          onclick="numDieUp(`numDieUp8D`, `#numDieUp8D`, `selDieUp8D`, `modDieUp8D`, `#but8D`)"
+          value="00"
+        >
+          +
+        </button>
+        <button
+          class="smlButton"
+          id="selDieUp8D"
+          type="button"
+          onclick="selDieUp('selDieUp8D', `#selDieUp8D`, `modDieUp8D`, `numDieUp8D`, `#but8D`)"
+          value="00"
+        >
+          &gt
+        </button>
+        <button
+          class="smlButton"
+          id="modDieUp8D"
+          type="button"
+          onclick="modDieUp('modDieUp8D', `#modDieUp8D`, `selDieUp8D`, `numDieUp8D`, `#but8D`)"
+          value="00"
+        >
+          +
+        </button>
+        <br />
+        <button
+          class="smlButton"
+          id="numDieDn8D"
+          type="button"
+          onclick="numDieDn(`numDieUp8D`, `#numDieUp8D`, `selDieUp8D`, `modDieUp8D`, `#but8D`)"
+        >
+          -
+        </button>
+        <button
+          class="smlButton"
+          id="selDieDn8D"
+          type="button"
+          onclick="selDieDn('selDieUp8D', `#selDieUp8D`, `modDieUp8D`, `numDieUp8D`, `#but8D`)"
+        >
+          &lt
+        </button>
+        <button
+          class="smlButton"
+          id="modDieDn8D"
+          type="button"
+          onclick="modDieDn('modDieUp8D', `#modDieUp8D`, `selDieUp8D`, `numDieUp8D`, `#but8D`)"
+        >
+          -
+        </button>
+        <!--____________________  OUTPUT DISPLAY-->
+        <div class="rolled" id="rolled8D">Dice + Mod</div>
+      </div>
+      <!-- _________LITTLE CARD 8EEEEEEEEEEEE START -->
+      <!-- _________LITTLE CARD 8EEEEEEEEEEEE START -->
+      <div class="litCard">
+        <!--________________ ROLL DICE TYPE-->
+        <input
+          type="text"
+          id="rollFor8E"
+          class="rollFor"
+          name="rollFor8E"
+          placeholder="Type of Roll"
+        />
+        <!--__________________________TOTAL-->
+        <div id="total8E" class="total">-</div>
+        <!--___________________ ROLL BUTTON 8E-->
+        <button
+          class="button"
+          id="but8E"
+          type="button"
+          onclick="rollDice('rolled8E', 'total8E', 'selDieUp8E', 'numDieUp8E', 'modDieUp8E','charEight', 'rollFor8E')"
+        >
+          Roll
+        </button>
+        <!--_________________________SELECT BUTTONS-->
+        <button
+          class="smlButton"
+          id="numDieUp8E"
+          type="button"
+          onclick="numDieUp(`numDieUp8E`, `#numDieUp8E`, `selDieUp8E`, `modDieUp8E`, `#but8E`)"
+          value="00"
+        >
+          +
+        </button>
+        <button
+          class="smlButton"
+          id="selDieUp8E"
+          type="button"
+          onclick="selDieUp('selDieUp8E', `#selDieUp8E`, `modDieUp8E`, `numDieUp8E`, `#but8E`)"
+          value="00"
+        >
+          &gt
+        </button>
+        <button
+          class="smlButton"
+          id="modDieUp8E"
+          type="button"
+          onclick="modDieUp('modDieUp8E', `#modDieUp8E`, `selDieUp8E`, `numDieUp8E`, `#but8E`)"
+          value="00"
+        >
+          +
+        </button>
+        <br />
+        <button
+          class="smlButton"
+          id="numDieDn8E"
+          type="button"
+          onclick="numDieDn(`numDieUp8E`, `#numDieUp8E`, `selDieUp8E`, `modDieUp8E`, `#but8E`)"
+        >
+          -
+        </button>
+        <button
+          class="smlButton"
+          id="selDieDn8E"
+          type="button"
+          onclick="selDieDn('selDieUp8E', `#selDieUp8E`, `modDieUp8E`, `numDieUp8E`, `#but8E`)"
+        >
+          &lt
+        </button>
+        <button
+          class="smlButton"
+          id="modDieDn8E"
+          type="button"
+          onclick="modDieDn('modDieUp8E', `#modDieUp8E`, `selDieUp8E`, `numDieUp8E`, `#but8E`)"
+        >
+          -
+        </button>
+        <!--____________________  OUTPUT DISPLAY-->
+        <div class="rolled" id="rolled8E">Dice + Mod</div>
+      </div>
+      <!-- _________LITTLE CARD 8FFFFFFFFFFF START -->
+      <!-- _________LITTLE CARD 8FFFFFFFFFFF START -->
+      <div class="litCard">
+        <!--________________ ROLL DICE TYPE-->
+        <input
+          type="text"
+          id="rollFor8F"
+          class="rollFor"
+          name="rollFor8F"
+          placeholder="Type of Roll"
+        />
+        <!--__________________________TOTAL-->
+        <div id="total8F" class="total">-</div>
+        <!--___________________ ROLL BUTTON 8F-->
+        <button
+          class="button"
+          id="but8F"
+          type="button"
+          onclick="rollDice('rolled8F', 'total8F', 'selDieUp8F', 'numDieUp8F', 'modDieUp8F','charEight', 'rollFor8F')"
+        >
+          Roll
+        </button>
+        <!--_________________________SELECT BUTTONS-->
+        <button
+          class="smlButton"
+          id="numDieUp8F"
+          type="button"
+          onclick="numDieUp(`numDieUp8F`, `#numDieUp8F`, `selDieUp8F`, `modDieUp8F`, `#but8F`)"
+          value="00"
+        >
+          +
+        </button>
+        <button
+          class="smlButton"
+          id="selDieUp8F"
+          type="button"
+          onclick="selDieUp('selDieUp8F', `#selDieUp8F`, `modDieUp8F`, `numDieUp8F`, `#but8F`)"
+          value="00"
+        >
+          &gt
+        </button>
+        <button
+          class="smlButton"
+          id="modDieUp8F"
+          type="button"
+          onclick="modDieUp('modDieUp8F', `#modDieUp8F`, `selDieUp8F`, `numDieUp8F`, `#but8F`)"
+          value="00"
+        >
+          +
+        </button>
+        <br />
+        <button
+          class="smlButton"
+          id="numDieDn8F"
+          type="button"
+          onclick="numDieDn(`numDieUp8F`, `#numDieUp8F`, `selDieUp8F`, `modDieUp8F`, `#but8F`)"
+        >
+          -
+        </button>
+        <button
+          class="smlButton"
+          id="selDieDn8F"
+          type="button"
+          onclick="selDieDn('selDieUp8F', `#selDieUp8F`, `modDieUp8F`, `numDieUp8F`, `#but8F`)"
+        >
+          &lt
+        </button>
+        <button
+          class="smlButton"
+          id="modDieDn8F"
+          type="button"
+          onclick="modDieDn('modDieUp8F', `#modDieUp8F`, `selDieUp8F`, `numDieUp8F`, `#but8F`)"
+        >
+          -
+        </button>
+        <!--____________________  OUTPUT DISPLAY-->
+        <div class="rolled" id="rolled8F">Dice + Mod</div>
+      </div>
+      <!--______________________________ CARD SAVE BUTTON-->
+      <!--______________________________ CARD SAVE BUTTON-->
+      <div class="saveBar">
+        <button id="saveButtonCard1" class="saveButton" onclick="save()">
+          Save
+        </button>
+      </div>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-firestore.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyD6iY8sLd26fTq5sEmh1VX3sbjCYy33myk",
+        authDomain: "hobbot-roll-v04.firebaseapp.com",
+        databaseURL: "https://hobbot-roll-v04.firebaseio.com",
+        projectId: "hobbot-roll-v04",
+        storageBucket: "hobbot-roll-v04.appspot.com",
+        messagingSenderId: "133335170206",
+        appId: "1:133335170206:web:6ff01f566c0e6085a3cf8f",
+        measurementId: "G-ZJDN9VS2CS",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+      const db = firebase.firestore();
+    </script>
+    <script src="appRoll_card8_v0-5.js"></script>
+  </body>
+</html>

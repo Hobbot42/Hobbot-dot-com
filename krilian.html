@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="nofollow" />
+    <link rel="stylesheet" href="styleRoll_card1_v0-5.css" />
+    <link rel="shortcut icon" href="./img/favicon.png" type="png" />
+    <title>HOBBOT ROLL 0.5</title>
+  </head>
+  <!--_________________ PAGE HEADER START ADD MORE FUNTIONS !!!!!!-->
+  <body>
+    <!-- _______________________________________ PAGE HEADER START-->
+    <header>
+      <h1 id="title">
+        Private Beta DICE ROLLER 0.5
+        <a href="index.html">Home</a>
+      </h1>
+    </header>
+    <!--______________BIG CARD 22222222222222222222222222222222222222 START-->
+    <div class="bigCard" id="bigCard2">
+      <!--__________________ CHARACTER NAME-->
+      <input
+        type="text"
+        id="charTwo"
+        class="charName"
+        name="charTwo"
+        placeholder="Character Name"
+      />
+      <!--______________LITTLE CARD 2AAAAAAAAAAA START-->
+      <!--______________LITTLE CARD 2AAAAAAAAAAA START-->
+      <div class="litCard">
+        <!--________________ ROLL DICE TYPE-->
+        <input
+          type="text"
+          id="rollFor2A"
+          class="rollFor"
+          name="rollFor2A"
+          placeholder="Type of Roll"
+        />
+        <!--__________________________TOTAL-->
+        <div id="total2A" class="total">-</div>
+        <!--___________________ ROLL BUTTON 2A-->
+        <button
+          class="button"
+          id="but2A"
+          type="button"
+          onclick="rollDice('rolled2A', 'total2A', 'selDieUp2A', 'numDieUp2A', 'modDieUp2A', 'charTwo', 'rollFor2A')"
+        >
+          Roll
+        </button>
+        <!--_________________________SELECT BUTTONS A-->
+        <button
+          class="smlButton"
+          id="numDieUp2A"
+          type="button"
+          onclick="numDieUp(`numDieUp2A`, `#numDieUp2A`, `selDieUp2A`, `modDieUp2A`, `#but2A`)"
+          value="00"
+        >
+          +
+        </button>
+        <button
+          class="smlButton"
+          id="selDieUp2A"
+          type="button"
+          onclick="selDieUp('selDieUp2A', `#selDieUp2A`, `modDieUp2A`, `numDieUp2A`, `#but2A`)"
+          value="00"
+        >
+          &gt
+        </button>
+        <button
+          class="smlButton"
+          id="modDieUp2A"
+          type="button"
+          onclick="modDieUp('modDieUp2A', `#modDieUp2A`, `selDieUp2A`, `numDieUp2A`, `#but2A`)"
+          value="00"
+        >
+          +
+        </button>
+        <br />
+        <button
+          class="smlButton"
+          id="numDieDn2A"
+          type="button"
+          onclick="numDieDn(`numDieUp2A`, `#numDieUp2A`, `selDieUp2A`, `modDieUp2A`, `#but2A`)"
+        >
+          -
+        </button>
+        <button
+          class="smlButton"
+          id="selDieDn2A"
+          type="button"
+          onclick="selDieDn('selDieUp2A', `#selDieUp2A`, `modDieUp2A`, `numDieUp2A`, `#but2A`)"
+        >
+          &lt
+        </button>
+        <button
+          class="smlButton"
+          id="modDieDn2A"
+          type="button"
+          onclick="modDieDn('modDieUp2A', `#modDieUp2A`, `selDieUp2A`, `numDieUp2A`, `#but2A`)"
+        >
+          -
+        </button>
+        <!--____________________  OUTPUT DISPLAY-->
+        <div class="rolled" id="rolled2A">Dice + Mod</div>
+      </div>
+      <!-- _____________________LITTLE CARD 2BBBBBBBBBB START -->
+      <!-- _____________________LITTLE CARD 2BBBBBBBBBB START -->
+      <div class="litCard">
+        <!--________________ ROLL DICE TYPE-->
+        <input
+          type="text"
+          id="rollFor2B"
+          class="rollFor"
+          name="rollFor2B"
+          placeholder="Type of Roll"
+        />
+        <!--__________________________TOTAL-->
+        <div id="total2B" class="total">-</div>
+        <!--___________________ ROLL BUTTON 2B-->
+        <button
+          class="button"
+          id="but2B"
+          type="button"
+          onclick="rollDice('rolled2B', 'total2B', 'selDieUp2B', 'numDieUp2B', 'modDieUp2B','charTwo', 'rollFor2B')"
+        >
+          Roll
+        </button>
+        <!--_________________________SELECT BUTTONS B-->
+        <button
+          class="smlButton"
+          id="numDieUp2B"
+          type="button"
+          onclick="numDieUp(`numDieUp2B`, `#numDieUp2B`, `selDieUp2B`, `modDieUp2B`, `#but2B`)"
+          value="00"
+        >
+          +
+        </button>
+        <button
+          class="smlButton"
+          id="selDieUp2B"
+          type="button"
+          onclick="selDieUp('selDieUp2B', `#selDieUp2B`, `modDieUp2B`, `numDieUp2B`, `#but2B`)"
+          value="00"
+        >
+          &gt
+        </button>
+        <button
+          class="smlButton"
+          id="modDieUp2B"
+          type="button"
+          onclick="modDieUp('modDieUp2B', `#modDieUp2B`, `selDieUp2B`, `numDieUp2B`, `#but2B`)"
+          value="00"
+        >
+          +
+        </button>
+        <br />
+        <button
+          class="smlButton"
+          id="numDieDn2B"
+          type="button"
+          onclick="numDieDn(`numDieUp2B`, `#numDieUp2B`, `selDieUp2B`, `modDieUp2B`, `#but2B`)"
+        >
+          -
+        </button>
+        <button
+          class="smlButton"
+          id="selDieDn2B"
+          type="button"
+          onclick="selDieDn('selDieUp2B', `#selDieUp2B`, `modDieUp2B`, `numDieUp2B`, `#but2B`)"
+        >
+          &lt
+        </button>
+        <button
+          class="smlButton"
+          id="modDieDn2B"
+          type="button"
+          onclick="modDieDn('modDieUp2B', `#modDieUp2B`, `selDieUp2B`, `numDieUp2B`, `#but2B`)"
+        >
+          -
+        </button>
+        <!--____________________  OUTPUT DISPLAY-->
+        <div class="rolled" id="rolled2B">Dice + Mod</div>
+      </div>
+      <!-- _________LITTLE CARD 2CCCCCCCCCC START -->
+      <!-- _________LITTLE CARD 2CCCCCCCCCC START -->
+      <div class="litCard">
+        <!--________________ ROLL DICE TYPE-->
+        <input
+          type="text"
+          id="rollFor2C"
+          class="rollFor"
+          name="rollFor2C"
+          placeholder="Type of Roll"
+        />
+        <!--__________________________TOTAL-->
+        <div id="total2C" class="total">-</div>
+        <!--___________________ ROLL BUTTON 2C-->
+        <button
+          class="button"
+          id="but2C"
+          type="button"
+          onclick="rollDice('rolled2C', 'total2C', 'selDieUp2C', 'numDieUp2C', 'modDieUp2C','charTwo', 'rollFor2C')"
+        >
+          Roll
+        </button>
+        <!--_________________________SELECT BUTTONS C-->
+        <button
+          class="smlButton"
+          id="numDieUp2C"
+          type="button"
+          onclick="numDieUp(`numDieUp2C`, `#numDieUp2C`, `selDieUp2C`, `modDieUp2C`, `#but2C`)"
+          value="00"
+        >
+          +
+        </button>
+        <button
+          class="smlButton"
+          id="selDieUp2C"
+          type="button"
+          onclick="selDieUp('selDieUp2C', `#selDieUp2C`, `modDieUp2C`, `numDieUp2C`, `#but2C`)"
+          value="00"
+        >
+          &gt
+        </button>
+        <button
+          class="smlButton"
+          id="modDieUp2C"
+          type="button"
+          onclick="modDieUp('modDieUp2C', `#modDieUp2C`, `selDieUp2C`, `numDieUp2C`, `#but2C`)"
+          value="00"
+        >
+          +
+        </button>
+        <br />
+        <button
+          class="smlButton"
+          id="numDieDn2C"
+          type="button"
+          onclick="numDieDn(`numDieUp2C`, `#numDieUp2C`, `selDieUp2C`, `modDieUp2C`, `#but2C`)"
+        >
+          -
+        </button>
+        <button
+          class="smlButton"
+          id="selDieDn2C"
+          type="button"
+          onclick="selDieDn('selDieUp2C', `#selDieUp2C`, `modDieUp2C`, `numDieUp2C`, `#but2C`)"
+        >
+          &lt
+        </button>
+        <button
+          class="smlButton"
+          id="modDieDn2C"
+          type="button"
+          onclick="modDieDn('modDieUp2C', `#modDieUp2C`, `selDieUp2C`, `numDieUp2C`, `#but2C`)"
+        >
+          -
+        </button>
+        <!--____________________  OUTPUT DISPLAY D-->
+        <div class="rolled" id="rolled2C">Dice + Mod</div>
+      </div>
+      <!-- _________LITTLE CARD 2DDDDDDDDDD START -->
+      <!-- _________LITTLE CARD 2DDDDDDDDDD START -->
+      <div class="litCard">
+        <!--________________ ROLL DICE TYPE-->
+        <input
+          type="text"
+          id="rollFor2D"
+          class="rollFor"
+          name="rollFor2D"
+          placeholder="Type of Roll"
+        />
+        <!--__________________________TOTAL-->
+        <div id="total2D" class="total">-</div>
+        <!--___________________ ROLL BUTTON 2D-->
+        <button
+          class="button"
+          id="but2D"
+          type="button"
+          onclick="rollDice('rolled2D', 'total2D', 'selDieUp2D', 'numDieUp2D', 'modDieUp2D','charTwo', 'rollFor2D')"
+        >
+          Roll
+        </button>
+        <!--_________________________SELECT BUTTONS-->
+        <button
+          class="smlButton"
+          id="numDieUp2D"
+          type="button"
+          onclick="numDieUp(`numDieUp2D`, `#numDieUp2D`, `selDieUp2D`, `modDieUp2D`, `#but2D`)"
+          value="00"
+        >
+          +
+        </button>
+        <button
+          class="smlButton"
+          id="selDieUp2D"
+          type="button"
+          onclick="selDieUp('selDieUp2D', `#selDieUp2D`, `modDieUp2D`, `numDieUp2D`, `#but2D`)"
+          value="00"
+        >
+          &gt
+        </button>
+        <button
+          class="smlButton"
+          id="modDieUp2D"
+          type="button"
+          onclick="modDieUp('modDieUp2D', `#modDieUp2D`, `selDieUp2D`, `numDieUp2D`, `#but2D`)"
+          value="00"
+        >
+          +
+        </button>
+        <br />
+        <button
+          class="smlButton"
+          id="numDieDn2D"
+          type="button"
+          onclick="numDieDn(`numDieUp2D`, `#numDieUp2D`, `selDieUp2D`, `modDieUp2D`, `#but2D`)"
+        >
+          -
+        </button>
+        <button
+          class="smlButton"
+          id="selDieDn2D"
+          type="button"
+          onclick="selDieDn('selDieUp2D', `#selDieUp2D`, `modDieUp2D`, `numDieUp2D`, `#but2D`)"
+        >
+          &lt
+        </button>
+        <button
+          class="smlButton"
+          id="modDieDn2D"
+          type="button"
+          onclick="modDieDn('modDieUp2D', `#modDieUp2D`, `selDieUp2D`, `numDieUp2D`, `#but2D`)"
+        >
+          -
+        </button>
+        <!--____________________  OUTPUT DISPLAY-->
+        <div class="rolled" id="rolled2D">Dice + Mod</div>
+      </div>
+      <!-- _________LITTLE CARD 2EEEEEEEEEEEE START -->
+      <!-- _________LITTLE CARD 2EEEEEEEEEEEE START -->
+      <div class="litCard">
+        <!--________________ ROLL DICE TYPE-->
+        <input
+          type="text"
+          id="rollFor2E"
+          class="rollFor"
+          name="rollFor2E"
+          placeholder="Type of Roll"
+        />
+        <!--__________________________TOTAL-->
+        <div id="total2E" class="total">-</div>
+        <!--___________________ ROLL BUTTON 2E-->
+        <button
+          class="button"
+          id="but2E"
+          type="button"
+          onclick="rollDice('rolled2E', 'total2E', 'selDieUp2E', 'numDieUp2E', 'modDieUp2E','charTwo', 'rollFor2E')"
+        >
+          Roll
+        </button>
+        <!--_________________________SELECT BUTTONS-->
+        <button
+          class="smlButton"
+          id="numDieUp2E"
+          type="button"
+          onclick="numDieUp(`numDieUp2E`, `#numDieUp2E`, `selDieUp2E`, `modDieUp2E`, `#but2E`)"
+          value="00"
+        >
+          +
+        </button>
+        <button
+          class="smlButton"
+          id="selDieUp2E"
+          type="button"
+          onclick="selDieUp('selDieUp2E', `#selDieUp2E`, `modDieUp2E`, `numDieUp2E`, `#but2E`)"
+          value="00"
+        >
+          &gt
+        </button>
+        <button
+          class="smlButton"
+          id="modDieUp2E"
+          type="button"
+          onclick="modDieUp('modDieUp2E', `#modDieUp2E`, `selDieUp2E`, `numDieUp2E`, `#but2E`)"
+          value="00"
+        >
+          +
+        </button>
+        <br />
+        <button
+          class="smlButton"
+          id="numDieDn2E"
+          type="button"
+          onclick="numDieDn(`numDieUp2E`, `#numDieUp2E`, `selDieUp2E`, `modDieUp2E`, `#but2E`)"
+        >
+          -
+        </button>
+        <button
+          class="smlButton"
+          id="selDieDn2E"
+          type="button"
+          onclick="selDieDn('selDieUp2E', `#selDieUp2E`, `modDieUp2E`, `numDieUp2E`, `#but2E`)"
+        >
+          &lt
+        </button>
+        <button
+          class="smlButton"
+          id="modDieDn2E"
+          type="button"
+          onclick="modDieDn('modDieUp2E', `#modDieUp2E`, `selDieUp2E`, `numDieUp2E`, `#but2E`)"
+        >
+          -
+        </button>
+        <!--____________________  OUTPUT DISPLAY-->
+        <div class="rolled" id="rolled2E">Dice + Mod</div>
+      </div>
+      <!-- _________LITTLE CARD 2FFFFFFFFFFF START -->
+      <!-- _________LITTLE CARD 2FFFFFFFFFFF START -->
+      <div class="litCard">
+        <!--________________ ROLL DICE TYPE-->
+        <input
+          type="text"
+          id="rollFor2F"
+          class="rollFor"
+          name="rollFor2F"
+          placeholder="Type of Roll"
+        />
+        <!--__________________________TOTAL-->
+        <div id="total2F" class="total">-</div>
+        <!--___________________ ROLL BUTTON 2F-->
+        <button
+          class="button"
+          id="but2F"
+          type="button"
+          onclick="rollDice('rolled2F', 'total2F', 'selDieUp2F', 'numDieUp2F', 'modDieUp2F','charTwo', 'rollFor2F')"
+        >
+          Roll
+        </button>
+        <!--_________________________SELECT BUTTONS-->
+        <button
+          class="smlButton"
+          id="numDieUp2F"
+          type="button"
+          onclick="numDieUp(`numDieUp2F`, `#numDieUp2F`, `selDieUp2F`, `modDieUp2F`, `#but2F`)"
+          value="00"
+        >
+          +
+        </button>
+        <button
+          class="smlButton"
+          id="selDieUp2F"
+          type="button"
+          onclick="selDieUp('selDieUp2F', `#selDieUp2F`, `modDieUp2F`, `numDieUp2F`, `#but2F`)"
+          value="00"
+        >
+          &gt
+        </button>
+        <button
+          class="smlButton"
+          id="modDieUp2F"
+          type="button"
+          onclick="modDieUp('modDieUp2F', `#modDieUp2F`, `selDieUp2F`, `numDieUp2F`, `#but2F`)"
+          value="00"
+        >
+          +
+        </button>
+        <br />
+        <button
+          class="smlButton"
+          id="numDieDn2F"
+          type="button"
+          onclick="numDieDn(`numDieUp2F`, `#numDieUp2F`, `selDieUp2F`, `modDieUp2F`, `#but2F`)"
+        >
+          -
+        </button>
+        <button
+          class="smlButton"
+          id="selDieDn2F"
+          type="button"
+          onclick="selDieDn('selDieUp2F', `#selDieUp2F`, `modDieUp2F`, `numDieUp2F`, `#but2F`)"
+        >
+          &lt
+        </button>
+        <button
+          class="smlButton"
+          id="modDieDn2F"
+          type="button"
+          onclick="modDieDn('modDieUp2F', `#modDieUp2F`, `selDieUp2F`, `numDieUp2F`, `#but2F`)"
+        >
+          -
+        </button>
+        <!--____________________  OUTPUT DISPLAY-->
+        <div class="rolled" id="rolled2F">Dice + Mod</div>
+      </div>
+      <!--______________________________ CARD SAVE BUTTON-->
+      <!--______________________________ CARD SAVE BUTTON-->
+      <div class="saveBar">
+        <button id="saveButtonCard1" class="saveButton" onclick="save()">
+          Save
+        </button>
+      </div>
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-firestore.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyD6iY8sLd26fTq5sEmh1VX3sbjCYy33myk",
+        authDomain: "hobbot-roll-v04.firebaseapp.com",
+        databaseURL: "https://hobbot-roll-v04.firebaseio.com",
+        projectId: "hobbot-roll-v04",
+        storageBucket: "hobbot-roll-v04.appspot.com",
+        messagingSenderId: "133335170206",
+        appId: "1:133335170206:web:6ff01f566c0e6085a3cf8f",
+        measurementId: "G-ZJDN9VS2CS",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+      const db = firebase.firestore();
+    </script>
+    <script src="appRoll_card2_v0-5.js"></script>
+  </body>
+</html>

@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  text-align: center;
+  font-size: 15px;
+  background-color: gray;
+  background-image: url(./img/northMap.jpg);
+  background-repeat: repeat;
+  background-size: 100%;
+  background-position: center;
+  border-radius: 9px;
+  margin: auto;
+}
+h1 {
+  font-size: 20px;
+  margin-bottom: 6px;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px rgb(138, 138, 180);
+  background-color: rgba(0, 0, 0, 0.472);
+}
+.bigCard {
+  width: 355px;
+  height: 826px;
+  border-radius: 9px;
+  margin: 4px;
+  display: inline-block;
+}
+#bigCard1 {
+  background-color: rgba(255, 255, 0, 0.5);
+}
+#bigCard2 {
+  background-color: rgba(139, 69, 19, 0.5);
+}
+#bigCard3 {
+  background-color: rgba(0, 128, 0, 0.5);
+}
+#bigCard4 {
+  background-color: rgba(255, 166, 0, 0.5);
+}
+#bigCard5 {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+#bigCard6 {
+  background-color: rgba(128, 0, 128, 0.5);
+}
+#bigCard7 {
+  background-color: rgba(128, 128, 128, 0.5);
+}
+#bigCard8 {
+  background-color: rgba(0, 0, 0, 0.507);
+}
+.charName {
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 9px;
+  width: 97%;
+  padding-top: 5px;
+  height: 39px;
+  font-size: 35px;
+  text-align: center;
+  border: none;
+  margin-left: 4px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  float: left;
+}
+.litCard {
+  width: 168px;
+  height: 230px;
+  background-color: rgba(255, 255, 255, 0.75);
+  margin: 4px;
+  margin-bottom: 10px;
+  border-radius: 9px;
+  float: left;
+}
+.saveBar {
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 9px;
+  width: 97%;
+  height: 33px;
+  float: left;
+  margin-left: 4px;
+}
+.saveButton {
+  margin-top: 5px;
+  padding: 0;
+  width: 152px;
+  height: 24px;
+  font-size: 18px;
+  background-color: rgb(255, 61, 61);
+  cursor: help;
+  border: none;
+  border-radius: 4px;
+  opacity: 0.5;
+}
+.saveButton:hover {
+  opacity: 1;
+}
+input.rollFor {
+  font-family: "Times New Roman";
+  text-align: center;
+  border: none;
+  background: none;
+  width: 98%;
+  font-size: 22px;
+}
+.total {
+  font-size: 75px;
+  font-family: "Times New Roman";
+  line-height: 80px;
+  height: 80px;
+  pointer-events: none;
+  transition: opacity ease-out 1s, transform ease-in-out 1s;
+}
+.button {
+  width: 152px;
+  height: 40px;
+  font-size: 18px;
+  background-color: rgba(72, 255, 0, 0.52);
+  margin: 3px;
+  cursor: help;
+  border: none;
+}
+.smlButton {
+  width: 48px;
+  height: 20px;
+  font-size: 18px;
+  background-color: rgba(95, 95, 95, 0.5);
+  cursor: pointer;
+  border: none;
+  margin-bottom: 1px;
+}
+.dieSelect {
+  width: 100% !important;
+}
+.modifier {
+  width: 40px;
+}
+.dieSelect select {
+  background: none;
+  width: 65px;
+  height: 20px;
+  border: none;
+}
+.qtyDice {
+  height: 20px;
+}
+.rolled {
+  margin-top: 4px;
+  font-size: 20px;
+}
+input.qtyDice {
+  width: 40px;
+  height: 20px;
+}
+button:hover {
+  opacity: 0.5;
+}
+input.rollFor:hover {
+  opacity: 0.5;
+}
